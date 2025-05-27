@@ -20,7 +20,6 @@ class DriverController extends Controller
         $validated = $request->validate([
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
-            'license_number' => 'required|string|unique:drivers',
             'phone' => 'nullable|string|max:20',
             // add other validation rules as needed
         ]);
